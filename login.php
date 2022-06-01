@@ -53,14 +53,14 @@ if (isset($_SESSION['loggedIn'])) {
         <div class="note">
             <p><span style="color: red;">*<span>fields are mandatory.</p>
         </div>
-        <form action="#">
+        <form action="login.php" method="post">
             <div class="title">
                 <h3>General:</h3>
             </div>
             <div class="form-row">
-                <div class="s-name">
-                    <label for="">State<span style="color: red;">*</span>:</label>
-                    <select name="" id="">
+                <div class="p-name">
+                    <label for="">Province<span style="color: red;">*</span>:</label>
+                    <select name="province" id="">
                         <option value="">All</option>
                         <option value="">1</option>
                         <option value="">2</option>
@@ -182,25 +182,25 @@ if (isset($_SESSION['loggedIn'])) {
                     <div class="simple-row">
                         <div class="first-name">
                             <label for="first name">First Name:</label>
-                            <input type="text" placeholder="First Name" class="h30 w150">
+                            <input type="text" placeholder="First Name" class="h30 w150" name="df_name1">
                         </div>
                         <div class="middle-name">
                             <label for="middle name">Middle Name:</label>
-                            <input type="text" placeholder="Middle Name" class="h30 w150">
+                            <input type="text" placeholder="Middle Name" class="h30 w150" name="dm_name1">
                         </div>
                         <div class="last-name">
                             <label for="last name">Last Name:</label>
-                            <input type="text" placeholder="Last Name" class="h30 w150">
+                            <input type="text" placeholder="Last Name" class="h30 w150" name="dl_name1">
                         </div>
                     </div>
                     <div class="form-row">
                         <p>
                             <label for="">Age:</label>
-                            <input type="number" name="death-age" class="w40 h25" class="death-input">
+                            <input type="number" name="death-age1" class="w40 h25" class="death-input">
                         </p>
                         <p>
                             <label for="death-cause">Cause of Death</label>
-                            <select name="death-cause" class="h25">
+                            <select name="death-cause1" class="h25">
                                 <option value="">Natural/Aged</option>
                                 <option value="">Disease</option>
                                 <option value="">Accident</option>
@@ -214,9 +214,9 @@ if (isset($_SESSION['loggedIn'])) {
                         <p style="margin-right: 30px;">
                             <label for="">Sex:</label>
                             <label for="male">M</label>
-                            <input type="radio" name="sex" id="" class="death-input">
+                            <input type="radio" name="sex1" class="death-input" value="male">
                             <label for="female">F</label>
-                            <input type="radio" name="sex" id="" class="death-input">
+                            <input type="radio" name="sex1" class="death-input" value="female">
                         </p>
                     </div>
                     <hr>
@@ -226,25 +226,25 @@ if (isset($_SESSION['loggedIn'])) {
                     <div class="simple-row">
                         <div class="first-name">
                             <label for="first name">First Name:</label>
-                            <input type="text" placeholder="First Name" class="h30 w150">
+                            <input type="text" placeholder="First Name" class="h30 w150" name="df_name2">
                         </div>
                         <div class="middle-name">
                             <label for="middle name">Middle Name:</label>
-                            <input type="text" placeholder="Middle Name" class="h30 w150">
+                            <input type="text" placeholder="Middle Name" class="h30 w150" name="dm_name2">
                         </div>
                         <div class="last-name">
                             <label for="last name">Last Name:</label>
-                            <input type="text" placeholder="Last Name" class="h30 w150">
+                            <input type="text" placeholder="Last Name" class="h30 w150" name="lf_name2">
                         </div>
                     </div>
                     <div class="form-row">
                         <p>
                             <label for="">Age:</label>
-                            <input type="number" name="death-age" class="w40 h25">
+                            <input type="number" name="death-age2" class="w40 h25">
                         </p>
                         <p>
                             <label for="death-cause">Cause of Death</label>
-                            <select name="death-cause" class="h25">
+                            <select name="death-cause2" class="h25">
                                 <option value="">Natural/Aged</option>
                                 <option value="">Disease</option>
                                 <option value="">Accident</option>
@@ -258,9 +258,9 @@ if (isset($_SESSION['loggedIn'])) {
                         <p style="margin-right: 30px;">
                             <label for="">Sex:</label>
                             <label for="male">M</label>
-                            <input type="radio" name="sex" id="">
+                            <input type="radio" name="sex2" id="" value="male">
                             <label for="female">F</label>
-                            <input type="radio" name="sex" id="">
+                            <input type="radio" name="sex2" id="" value="female">
                         </p>
                     </div>
                     <hr>
@@ -271,25 +271,25 @@ if (isset($_SESSION['loggedIn'])) {
                     <div class="simple-row">
                         <div class="first-name">
                             <label for="first name">First Name:</label>
-                            <input type="text" placeholder="First Name" class="h30 w150">
+                            <input type="text" placeholder="First Name" class="h30 w150" name="df_name3">
                         </div>
                         <div class="middle-name">
                             <label for="middle name">Middle Name:</label>
-                            <input type="text" placeholder="Middle Name" class="h30 w150">
+                            <input type="text" placeholder="Middle Name" class="h30 w150" name="dm_name3">
                         </div>
                         <div class="last-name">
                             <label for="last name">Last Name:</label>
-                            <input type="text" placeholder="Last Name" class="h30 w150">
+                            <input type="text" placeholder="Last Name" class="h30 w150" name="dl_name3">
                         </div>
                     </div>
                     <div class="form-row">
                         <p>
                             <label for="">Age:</label>
-                            <input type="number" name="death-age" class="w40 h25">
+                            <input type="number" name="death-age3" class="w40 h25">
                         </p>
                         <p>
                             <label for="death-cause">Cause of Death</label>
-                            <select name="death-cause" class="h25">
+                            <select name="death-cause3" class="h25">
                                 <option value="">Natural/Aged</option>
                                 <option value="">Disease</option>
                                 <option value="">Accident</option>
@@ -303,9 +303,9 @@ if (isset($_SESSION['loggedIn'])) {
                         <p style="margin-right: 30px;">
                             <label for="">Sex:</label>
                             <label for="male">M</label>
-                            <input type="radio" name="sex" id="">
+                            <input type="radio" name="sex3" id="" value="male">
                             <label for="female">F</label>
-                            <input type="radio" name="sex" id="">
+                            <input type="radio" name="sex3" id="" value="female">
                         </p>
                     </div>
                     <hr>
@@ -316,9 +316,9 @@ if (isset($_SESSION['loggedIn'])) {
                 <div class="ownership">
                     <label for="owner">Home Ownership Status<span style="color: red;">*</span>:</label>
                     <label for="own">Own:</label>
-                    <input type="radio" name="ownership">
+                    <input type="radio" name="homeownership" value="own">
                     <label for="rent">Rent:</label>
-                    <input type="radio" name="ownership">
+                    <input type="radio" name="homeownership" value="rent">
                 </div>
             </div>
             <div class="form-row">
@@ -353,7 +353,7 @@ if (isset($_SESSION['loggedIn'])) {
             <div class="form-row">
                 <p>
                     Family income (per year):
-                    <input type="text" placeholder="in cash" class="h25">
+                    <input type="text" placeholder="in cash" class="h25" name="income">
                 </p>
             </div>
             <div class="title">
@@ -368,243 +368,35 @@ if (isset($_SESSION['loggedIn'])) {
                 <div class="simple-row">
                     <div class="first-name">
                         <label for="">First Name:</label>
-                        <input type="text" name="fname" id="" placeholder="First Name" class="h25 w100">
+                        <input type="text" name="fname1" id="" placeholder="First Name" class="h25 w100">
                     </div>
                     <div class="middle-name">
                         <label for="">Middle Name:</label>
-                        <input type="text" name="mname" id="" placeholder="Middle Name" class="h25 w100">
+                        <input type="text" name="mname1" id="" placeholder="Middle Name" class="h25 w100">
                     </div>
                     <div class="last-name">
                         <label for="">Last Name:</label>
-                        <input type="text" name="lname" id="" placeholder="Last Name" class="h25 w100">
+                        <input type="text" name="lname1" id="" placeholder="Last Name" class="h25 w100">
                     </div>
                 </div>
                 <!--form row -->
                 <div class="form-row">
                     <p>
                         <label for="">Profession:</label>
-                        <select name="profession" class="h25">
-                            <option value="">teacher</option>
-                            <option value="">doctor</option>
-                            <option value="">agriculture</option>
-                            <option value="">engineer</option>
-                            <option value="">businessman</option>
-                            <option value="">unemployed</option>
+                        <select name="profession1" class="h25">
+                            <option value="teacher">Teacher</option>
+                            <option value="doctor">Doctor</option>
+                            <option value="agriculture">Agriculture</option>
+                            <option value="engineer">Engineer</option>
+                            <option value="businessman">Businessman</option>
+                            <option value="military">Military</option>
+                            <option value="other">Others</option>
+                            <option value="unemp">Unemployed</option>
                         </select>
                     </p>
                     <p>
                         <label for="edu">Education:</label>
-                        <select name="education" id="" class="h25">
-                        <option value="elementary">Elementary</option>
-                            <option value="primary">Primary</option>
-                            <option value="secondary">Secondary</option>
-                            <option value="h_secodary">Higher Secondary</option>
-                            <option value="bachelor">Bachelor</option>
-                            <option value="masters">Masters</option>
-                            <option value="phd">PHD</option>
-                            <option value="none">None</option>
-                            </select>
-                    </p>
-                    <p>
-                        <label for="">Relation:</label>
-                        <select name="relation" class="h25">
-                            <option value="">Head of family</option>
-                            <option value="">Mother</option>
-                            <option value="">Father</option>
-                            <option value="">Wife</option>
-                            <option value="">Husband</option>
-                            <option value="">Son</option>
-                            <option value="">Daughter</option>
-                            <option value="">Daughter-in-law</option>
-                            <option value="">Son-in-law</option>
-                            <option value="">Grand son</option>
-                            <option value="">Grand daughter</option>
-                            <option value="">siblings</option>
-                            <option value="">other</option>
-                        </select>
-                    </p>
-
-                </div>
-                <div class="form-row">
-                    <p>
-                        <label for="">DOB:</label>
-                        <input type="date" name="" id="" class="h25">
-                    </p>
-                </div>
-                <hr>
-            </div>
-            <div class="members">
-                <hr>
-                <div class="simple-row">
-                    <div class="first-name">
-                        <label for="">First Name:</label>
-                        <input type="text" name="fname" id="" placeholder="First Name" class="h30 w100">
-                    </div>
-                    <div class="middle-name">
-                        <label for="">Middle Name:</label>
-                        <input type="text" name="mname" id="" placeholder="Middle Name" class="h30 w100">
-                    </div>
-                    <div class="last-name">
-                        <label for="">Last Name:</label>
-                        <input type="text" name="lname" id="" placeholder="Last Name" class="h30 w100">
-                    </div>
-                </div>
-                <!--form row -->
-                <div class="form-row">
-                    <p>
-                        <label for="">Profession:</label>
-                        <select name="profession" class="h25">
-                            <option value="">teacher</option>
-                            <option value="">doctor</option>
-                            <option value="">agriculture</option>
-                            <option value="">engineer</option>
-                            <option value="">businessman</option>
-                            <option value="">unemployed</option>
-                        </select>
-                    </p>
-                    <p>
-                        <label for="edu">Education:</label>
-                        <select name="education" id="" class="h25">
-                        <option value="elementary">Elementary</option>
-                            <option value="primary">Primary</option>
-                            <option value="secondary">Secondary</option>
-                            <option value="h_secodary">Higher Secondary</option>
-                            <option value="bachelor">Bachelor</option>
-                            <option value="masters">Masters</option>
-                            <option value="phd">PHD</option>
-                            <option value="none">None</option>
-                        </select>
-                    </p>
-                    <p>
-                        <label for="">Relation:</label>
-                        <select name="relation" class="h25">
-                            <option value="">Head of family</option>
-                            <option value="">Mother</option>
-                            <option value="">Father</option>
-                            <option value="">Wife</option>
-                            <option value="">Husband</option>
-                            <option value="">Son</option>
-                            <option value="">Daughter</option>
-                            <option value="">Daughter-in-law</option>
-                            <option value="">Son-in-law</option>
-                            <option value="">Grand son</option>
-                            <option value="">Grand daughter</option>
-                            <option value="">siblings</option>
-                            <option value="">other</option>
-                        </select>
-                    </p>
-
-                </div>
-                <div class="form-row">
-                    <p>
-                        <label for="">DOB:</label>
-                        <input type="date" name="" id="" class="h25">
-                    </p>
-                </div>
-                <hr>
-            </div>
-            <div class="members">
-                <hr>
-                <div class="simple-row">
-                    <div class="first-name">
-                        <label for="">First Name:</label>
-                        <input type="text" name="fname" id="" placeholder="First Name" class="h30 w100">
-                    </div>
-                    <div class="middle-name">
-                        <label for="">Middle Name:</label>
-                        <input type="text" name="mname" id="" placeholder="Middle Name" class="h30 w100">
-                    </div>
-                    <div class="last-name">
-                        <label for="">Last Name:</label>
-                        <input type="text" name="lname" id="" placeholder="Last Name" class="h30 w100">
-                    </div>
-                </div>
-                <!--form row -->
-                <div class="form-row">
-                    <p>
-                        <label for="">Profession:</label>
-                        <select name="profession" class="h25">
-                            <option value="">teacher</option>
-                            <option value="">doctor</option>
-                            <option value="">agriculture</option>
-                            <option value="">engineer</option>
-                            <option value="">businessman</option>
-                            <option value="">unemployed</option>
-                        </select>
-                    </p>
-                    <p>
-                        <label for="edu">Education:</label>
-                        <select name="education" id="" class="h25">
-                        <option value="elementary">Elementary</option>
-                            <option value="primary">Primary</option>
-                            <option value="secondary">Secondary</option>
-                            <option value="h_secodary">Higher Secondary</option>
-                            <option value="bachelor">Bachelor</option>
-                            <option value="masters">Masters</option>
-                            <option value="phd">PHD</option>
-                            <option value="none">None</option>
-                        </select>
-                    </p>
-                    <p>
-                        <label for="">Relation:</label>
-                        <select name="relation" class="h25">
-                            <option value="">Head of family</option>
-                            <option value="">Mother</option>
-                            <option value="">Father</option>
-                            <option value="">Wife</option>
-                            <option value="">Husband</option>
-                            <option value="">Son</option>
-                            <option value="">Daughter</option>
-                            <option value="">Daughter-in-law</option>
-                            <option value="">Son-in-law</option>
-                            <option value="">Grand son</option>
-                            <option value="">Grand daughter</option>
-                            <option value="">siblings</option>
-                            <option value="">other</option>
-                        </select>
-                    </p>
-
-                </div>
-                <div class="form-row">
-                    <p>
-                        <label for="">DOB:</label>
-                        <input type="date" name="" id="" class="h25">
-                    </p>
-                </div>
-                <hr>
-            </div>
-            <div class="members">
-                <hr>
-                <div class="simple-row">
-                    <div class="first-name">
-                        <label for="">First Name:</label>
-                        <input type="text" name="fname" id="" placeholder="First Name" class="h30 w100">
-                    </div>
-                    <div class="middle-name">
-                        <label for="">Middle Name:</label>
-                        <input type="text" name="mname" id="" placeholder="Middle Name" class="h30 w100">
-                    </div>
-                    <div class="last-name">
-                        <label for="">Last Name:</label>
-                        <input type="text" name="lname" id="" placeholder="Last Name" class="h30 w100">
-                    </div>
-                </div>
-                <!--form row -->
-                <div class="form-row">
-                    <p>
-                        <label for="">Profession:</label>
-                        <select name="profession" class="h25">
-                            <option value="">teacher</option>
-                            <option value="">doctor</option>
-                            <option value="">agriculture</option>
-                            <option value="">engineer</option>
-                            <option value="">businessman</option>
-                            <option value="">unemployed</option>
-                        </select>
-                    </p>
-                    <p>
-                        <label for="edu">Education:</label>
-                        <select name="education" id="" class="h25">
+                        <select name="education1" id="" class="h25">
                             <option value="elementary">Elementary</option>
                             <option value="primary">Primary</option>
                             <option value="secondary">Secondary</option>
@@ -617,28 +409,27 @@ if (isset($_SESSION['loggedIn'])) {
                     </p>
                     <p>
                         <label for="">Relation:</label>
-                        <select name="relation" class="h25">
-                            <option value="">Head of family</option>
-                            <option value="">Mother</option>
-                            <option value="">Father</option>
-                            <option value="">Wife</option>
-                            <option value="">Husband</option>
-                            <option value="">Son</option>
-                            <option value="">Daughter</option>
-                            <option value="">Daughter-in-law</option>
-                            <option value="">Son-in-law</option>
-                            <option value="">Grand son</option>
-                            <option value="">Grand daughter</option>
-                            <option value="">siblings</option>
-                            <option value="">other</option>
+                        <select name="relation1" class="h25">
+                            <option value="head">Head of family</option>
+                            <option value="mother">Mother</option>
+                            <option value="father">Father</option>
+                            <option value="wife">Wife</option>
+                            <option value="husband">Husband</option>
+                            <option value="son">Son</option>
+                            <option value="daughter">Daughter</option>
+                            <option value="daughter-in-law">Daughter-in-law</option>
+                            <option value="son-in-law">Son-in-law</option>
+                            <option value="grand-son">Grand son</option>
+                            <option value="grand-daughter">Grand daughter</option>
+                            <option value="sibling">siblings</option>
+                            <option value="other">other</option>
                         </select>
                     </p>
-
                 </div>
                 <div class="form-row">
                     <p>
                         <label for="">DOB:</label>
-                        <input type="date" name="" id="" class="h25">
+                        <input type="date" name="date1" id="" class="h25">
                     </p>
                 </div>
                 <hr>
@@ -648,22 +439,22 @@ if (isset($_SESSION['loggedIn'])) {
                 <div class="simple-row">
                     <div class="first-name">
                         <label for="">First Name:</label>
-                        <input type="text" name="fname" id="" placeholder="First Name" class="h30 w100">
+                        <input type="text" name="fname2" id="" placeholder="First Name" class="h30 w100">
                     </div>
                     <div class="middle-name">
                         <label for="">Middle Name:</label>
-                        <input type="text" name="mname" id="" placeholder="Middle Name" class="h30 w100">
+                        <input type="text" name="mname2" id="" placeholder="Middle Name" class="h30 w100">
                     </div>
                     <div class="last-name">
                         <label for="">Last Name:</label>
-                        <input type="text" name="lname" id="" placeholder="Last Name" class="h30 w100">
+                        <input type="text" name="lname2" id="" placeholder="Last Name" class="h30 w100">
                     </div>
                 </div>
                 <!--form row -->
                 <div class="form-row">
                     <p>
                         <label for="">Profession:</label>
-                        <select name="profession" class="h25">
+                        <select name="profession2" class="h25">
                             <option value="">teacher</option>
                             <option value="">doctor</option>
                             <option value="">agriculture</option>
@@ -674,8 +465,8 @@ if (isset($_SESSION['loggedIn'])) {
                     </p>
                     <p>
                         <label for="edu">Education:</label>
-                        <select name="education" id="" class="h25">
-                        <option value="elementary">Elementary</option>
+                        <select name="education2" id="" class="h25">
+                            <option value="elementary">Elementary</option>
                             <option value="primary">Primary</option>
                             <option value="secondary">Secondary</option>
                             <option value="h_secodary">Higher Secondary</option>
@@ -687,28 +478,27 @@ if (isset($_SESSION['loggedIn'])) {
                     </p>
                     <p>
                         <label for="">Relation:</label>
-                        <select name="relation" class="h25">
-                            <option value="">Head of family</option>
-                            <option value="">Mother</option>
-                            <option value="">Father</option>
-                            <option value="">Wife</option>
-                            <option value="">Husband</option>
-                            <option value="">Son</option>
-                            <option value="">Daughter</option>
-                            <option value="">Daughter-in-law</option>
-                            <option value="">Son-in-law</option>
-                            <option value="">Grand son</option>
-                            <option value="">Grand daughter</option>
-                            <option value="">siblings</option>
-                            <option value="">other</option>
+                        <select name="relation2" class="h25">
+                            <option value="head">Head of family</option>
+                            <option value="mother">Mother</option>
+                            <option value="father">Father</option>
+                            <option value="wife">Wife</option>
+                            <option value="husband">Husband</option>
+                            <option value="son">Son</option>
+                            <option value="daughter">Daughter</option>
+                            <option value="daughter-in-law">Daughter-in-law</option>
+                            <option value="son-in-law">Son-in-law</option>
+                            <option value="grand-son">Grand son</option>
+                            <option value="grand-daughter">Grand daughter</option>
+                            <option value="sibling">siblings</option>
+                            <option value="other">other</option>
                         </select>
                     </p>
-
                 </div>
                 <div class="form-row">
                     <p>
                         <label for="">DOB:</label>
-                        <input type="date" name="" id="" class="h25">
+                        <input type="date" name="date2" id="" class="h25">
                     </p>
                 </div>
                 <hr>
@@ -718,34 +508,108 @@ if (isset($_SESSION['loggedIn'])) {
                 <div class="simple-row">
                     <div class="first-name">
                         <label for="">First Name:</label>
-                        <input type="text" name="fname" id="" placeholder="First Name" class="h30 w100">
+                        <input type="text" name="fname3" id="" placeholder="First Name" class="h30 w100">
                     </div>
                     <div class="middle-name">
                         <label for="">Middle Name:</label>
-                        <input type="text" name="mname" id="" placeholder="Middle Name" class="h30 w100">
+                        <input type="text" name="mname3" id="" placeholder="Middle Name" class="h30 w100">
                     </div>
                     <div class="last-name">
                         <label for="">Last Name:</label>
-                        <input type="text" name="lname" id="" placeholder="Last Name" class="h30 w100">
+                        <input type="text" name="lname3" id="" placeholder="Last Name" class="h30 w100">
                     </div>
                 </div>
                 <!--form row -->
                 <div class="form-row">
                     <p>
                         <label for="">Profession:</label>
-                        <select name="profession" class="h25">
-                            <option value="">teacher</option>
-                            <option value="">doctor</option>
-                            <option value="">agriculture</option>
-                            <option value="">engineer</option>
-                            <option value="">businessman</option>
-                            <option value="">unemployed</option>
+                        <select name="profession3" class="h25">
+                            <option value="teacher">Teacher</option>
+                            <option value="doctor">Doctor</option>
+                            <option value="agriculture">Agriculture</option>
+                            <option value="engineer">Engineer</option>
+                            <option value="businessman">Businessman</option>
+                            <option value="military">Military</option>
+                            <option value="other">Others</option>
+                            <option value="unemp">Unemployed</option>
                         </select>
                     </p>
                     <p>
                         <label for="edu">Education:</label>
-                        <select name="education" id="" class="h25">
-                        <option value="elementary">Elementary</option>
+                        <select name="education3" id="" class="h25">
+                            <option value="teacher">Teacher</option>
+                            <option value="doctor">Doctor</option>
+                            <option value="agriculture">Agriculture</option>
+                            <option value="engineer">Engineer</option>
+                            <option value="businessman">Businessman</option>
+                            <option value="military">Military</option>
+                            <option value="other">Others</option>
+                            <option value="unemp">Unemployed</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="">Relation:</label>
+                        <select name="relation3" class="h25">
+                            <option value="head">Head of family</option>
+                            <option value="mother">Mother</option>
+                            <option value="father">Father</option>
+                            <option value="wife">Wife</option>
+                            <option value="husband">Husband</option>
+                            <option value="son">Son</option>
+                            <option value="daughter">Daughter</option>
+                            <option value="daughter-in-law">Daughter-in-law</option>
+                            <option value="son-in-law">Son-in-law</option>
+                            <option value="grand-son">Grand son</option>
+                            <option value="grand-daughter">Grand daughter</option>
+                            <option value="sibling">siblings</option>
+                            <option value="other">other</option>
+                        </select>
+                    </p>
+
+                </div>
+                <div class="form-row">
+                    <p>
+                        <label for="">DOB:</label>
+                        <input type="date" name="date3" id="" class="h25">
+                    </p>
+                </div>
+                <hr>
+            </div>
+            <div class="members">
+                <hr>
+                <div class="simple-row">
+                    <div class="first-name">
+                        <label for="">First Name:</label>
+                        <input type="text" name="fname4" id="" placeholder="First Name" class="h30 w100">
+                    </div>
+                    <div class="middle-name">
+                        <label for="">Middle Name:</label>
+                        <input type="text" name="mname4" id="" placeholder="Middle Name" class="h30 w100">
+                    </div>
+                    <div class="last-name">
+                        <label for="">Last Name:</label>
+                        <input type="text" name="lname4" id="" placeholder="Last Name" class="h30 w100">
+                    </div>
+                </div>
+                <!--form row -->
+                <div class="form-row">
+                    <p>
+                        <label for="">Profession:</label>
+                        <select name="profession4" class="h25">
+                            <option value="teacher">Teacher</option>
+                            <option value="doctor">Doctor</option>
+                            <option value="agriculture">Agriculture</option>
+                            <option value="engineer">Engineer</option>
+                            <option value="businessman">Businessman</option>
+                            <option value="military">Military</option>
+                            <option value="other">Others</option>
+                            <option value="unemp">Unemployed</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="edu">Education:</label>
+                        <select name="education4" id="" class="h25">
+                            <option value="elementary">Elementary</option>
                             <option value="primary">Primary</option>
                             <option value="secondary">Secondary</option>
                             <option value="h_secodary">Higher Secondary</option>
@@ -757,20 +621,20 @@ if (isset($_SESSION['loggedIn'])) {
                     </p>
                     <p>
                         <label for="">Relation:</label>
-                        <select name="relation" class="h25">
-                            <option value="">Head of family</option>
-                            <option value="">Mother</option>
-                            <option value="">Father</option>
-                            <option value="">Wife</option>
-                            <option value="">Husband</option>
-                            <option value="">Son</option>
-                            <option value="">Daughter</option>
-                            <option value="">Daughter-in-law</option>
-                            <option value="">Son-in-law</option>
-                            <option value="">Grand son</option>
-                            <option value="">Grand daughter</option>
-                            <option value="">siblings</option>
-                            <option value="">other</option>
+                        <select name="relation4" class="h25">
+                            <option value="head">Head of family</option>
+                            <option value="mother">Mother</option>
+                            <option value="father">Father</option>
+                            <option value="wife">Wife</option>
+                            <option value="husband">Husband</option>
+                            <option value="son">Son</option>
+                            <option value="daughter">Daughter</option>
+                            <option value="daughter">Daughter-in-law</option>
+                            <option value="son-in-law">Son-in-law</option>
+                            <option value="grand-son">Grand son</option>
+                            <option value="grand-daughter">Grand daughter</option>
+                            <option value="sibling">siblings</option>
+                            <option value="other">other</option>
                         </select>
                     </p>
 
@@ -778,7 +642,7 @@ if (isset($_SESSION['loggedIn'])) {
                 <div class="form-row">
                     <p>
                         <label for="">DOB:</label>
-                        <input type="date" name="" id="" class="h25">
+                        <input type="date" name="date4" id="" class="h25">
                     </p>
                 </div>
                 <hr>
@@ -788,58 +652,203 @@ if (isset($_SESSION['loggedIn'])) {
                 <div class="simple-row">
                     <div class="first-name">
                         <label for="">First Name:</label>
-                        <input type="text" name="fname" id="" placeholder="First Name" class="h30 w100">
+                        <input type="text" name="fname5" id="" placeholder="First Name" class="h30 w100">
                     </div>
                     <div class="middle-name">
                         <label for="">Middle Name:</label>
-                        <input type="text" name="mname" id="" placeholder="Middle Name" class="h30 w100">
+                        <input type="text" name="mname5" id="" placeholder="Middle Name" class="h30 w100">
                     </div>
                     <div class="last-name">
                         <label for="">Last Name:</label>
-                        <input type="text" name="lname" id="" placeholder="Last Name" class="h30 w100">
+                        <input type="text" name="lname5" id="" placeholder="Last Name" class="h30 w100">
+                    </div>
+                </div>
+                <!--form row -->
+                <div class="form-row">
+                    <p>
+                        <label for="">Profession:</label>
+                        <select name="profession5" class="h25">
+                            <option value="teacher">Teacher</option>
+                            <option value="doctor">Doctor</option>
+                            <option value="agriculture">Agriculture</option>
+                            <option value="engineer">Engineer</option>
+                            <option value="businessman">Businessman</option>
+                            <option value="military">Military</option>
+                            <option value="other">Others</option>
+                            <option value="unemp">Unemployed</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="edu">Education:</label>
+                        <select name="education5" id="" class="h25">
+                            <option value="elementary">Elementary</option>
+                            <option value="primary">Primary</option>
+                            <option value="secondary">Secondary</option>
+                            <option value="h_secodary">Higher Secondary</option>
+                            <option value="bachelor">Bachelor</option>
+                            <option value="masters">Masters</option>
+                            <option value="phd">PHD</option>
+                            <option value="none">None</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="">Relation:</label>
+                        <select name="relation5" class="h25">
+                            <option value="head">Head of family</option>
+                            <option value="mother">Mother</option>
+                            <option value="father">Father</option>
+                            <option value="wife">Wife</option>
+                            <option value="husband">Husband</option>
+                            <option value="son">Son</option>
+                            <option value="daughter">Daughter</option>
+                            <option value="daughter">Daughter-in-law</option>
+                            <option value="son-in-law">Son-in-law</option>
+                            <option value="grand-son">Grand son</option>
+                            <option value="grand-daughter">Grand daughter</option>
+                            <option value="sibling">siblings</option>
+                            <option value="other">other</option>
+                        </select>
+                    </p>
+
+                </div>
+                <div class="form-row">
+                    <p>
+                        <label for="">DOB:</label>
+                        <input type="date" name="date5" id="" class="h25">
+                    </p>
+                </div>
+                <hr>
+            </div>
+            <div class="members">
+                <hr>
+                <div class="simple-row">
+                    <div class="first-name">
+                        <label for="">First Name:</label>
+                        <input type="text" name="fname6" id="" placeholder="First Name" class="h30 w100">
+                    </div>
+                    <div class="middle-name">
+                        <label for="">Middle Name:</label>
+                        <input type="text" name="mname6" id="" placeholder="Middle Name" class="h30 w100">
+                    </div>
+                    <div class="last-name">
+                        <label for="">Last Name:</label>
+                        <input type="text" name="lname6" id="" placeholder="Last Name" class="h30 w100">
+                    </div>
+                </div>
+                <!--form row -->
+                <div class="form-row">
+                    <p>
+                        <label for="">Profession:</label>
+                        <select name="profession6" class="h25">
+                            <option value="teacher">Teacher</option>
+                            <option value="doctor">Doctor</option>
+                            <option value="agriculture">Agriculture</option>
+                            <option value="engineer">Engineer</option>
+                            <option value="businessman">Businessman</option>
+                            <option value="military">Military</option>
+                            <option value="other">Others</option>
+                            <option value="unemp">Unemployed</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="edu">Education:</label>
+                        <select name="education6" id="" class="h25">
+                            <option value="elementary">Elementary</option>
+                            <option value="primary">Primary</option>
+                            <option value="secondary">Secondary</option>
+                            <option value="h_secodary">Higher Secondary</option>
+                            <option value="bachelor">Bachelor</option>
+                            <option value="masters">Masters</option>
+                            <option value="phd">PHD</option>
+                            <option value="none">None</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="">Relation:</label>
+                        <select name="relation6" class="h25">
+                            <option value="head">Head of family</option>
+                            <option value="mother">Mother</option>
+                            <option value="father">Father</option>
+                            <option value="wife">Wife</option>
+                            <option value="husband">Husband</option>
+                            <option value="son">Son</option>
+                            <option value="daughter">Daughter</option>
+                            <option value="daughter">Daughter-in-law</option>
+                            <option value="son-in-law">Son-in-law</option>
+                            <option value="grand-son">Grand son</option>
+                            <option value="grand-daughter">Grand daughter</option>
+                            <option value="sibling">siblings</option>
+                            <option value="other">other</option>
+                        </select>
+                    </p>
+
+                </div>
+                <div class="form-row">
+                    <p>
+                        <label for="">DOB:</label>
+                        <input type="date" name="date6" id="" class="h25">
+                    </p>
+                </div>
+                <hr>
+            </div>
+            <div class="members">
+                <hr>
+                <div class="simple-row">
+                    <div class="first-name">
+                        <label for="">First Name:</label>
+                        <input type="text" name="fname7" id="" placeholder="First Name" class="h30 w100">
+                    </div>
+                    <div class="middle-name">
+                        <label for="">Middle Name:</label>
+                        <input type="text" name="mname7" id="" placeholder="Middle Name" class="h30 w100">
+                    </div>
+                    <div class="last-name">
+                        <label for="">Last Name:</label>
+                        <input type="text" name="lname7" id="" placeholder="Last Name" class="h30 w100">
                     </div>
                     <!--form row -->
                     <div class="form-row">
                         <p>
                             <label for="">Profession:</label>
-                            <select name="profession" class="h25">
-                                <option value="">teacher</option>
-                                <option value="">doctor</option>
-                                <option value="">agriculture</option>
-                                <option value="">engineer</option>
-                                <option value="">businessman</option>
-                                <option value="">unemployed</option>
+                            <select name="profession7" class="h25">
+                                <option value="doctor">Doctor</option>
+                                <option value="agriculture">Agriculture</option>
+                                <option value="engineer">Engineer</option>
+                                <option value="businessman">Businessman</option>
+                                <option value="military">Military</option>
+                                <option value="other">Others</option>
+                                <option value="unemp">Unemployed</option>
                             </select>
                         </p>
                         <p>
                             <label for="edu">Education:</label>
-                            <select name="education" id="" class="h25">
-                            <option value="elementary">Elementary</option>
-                            <option value="primary">Primary</option>
-                            <option value="secondary">Secondary</option>
-                            <option value="h_secodary">Higher Secondary</option>
-                            <option value="bachelor">Bachelor</option>
-                            <option value="masters">Masters</option>
-                            <option value="phd">PHD</option>
-                            <option value="none">None</option>
+                            <select name="education7" id="" class="h25">
+                                <option value="elementary">Elementary</option>
+                                <option value="primary">Primary</option>
+                                <option value="secondary">Secondary</option>
+                                <option value="h_secodary">Higher Secondary</option>
+                                <option value="bachelor">Bachelor</option>
+                                <option value="masters">Masters</option>
+                                <option value="phd">PHD</option>
+                                <option value="none">None</option>
                             </select>
                         </p>
                         <p>
                             <label for="">Relation:</label>
-                            <select name="relation" class="h25">
-                                <option value="">Head of family</option>
-                                <option value="">Mother</option>
-                                <option value="">Father</option>
-                                <option value="">Wife</option>
-                                <option value="">Husband</option>
-                                <option value="">Son</option>
-                                <option value="">Daughter</option>
-                                <option value="">Daughter-in-law</option>
-                                <option value="">Son-in-law</option>
-                                <option value="">Grand son</option>
-                                <option value="">Grand daughter</option>
-                                <option value="">siblings</option>
-                                <option value="">other</option>
+                            <select name="relation7" class="h25">
+                                <option value="head">Head of family</option>
+                                <option value="mother">Mother</option>
+                                <option value="father">Father</option>
+                                <option value="wife">Wife</option>
+                                <option value="husband">Husband</option>
+                                <option value="son">Son</option>
+                                <option value="daughter">Daughter</option>
+                                <option value="daughter">Daughter-in-law</option>
+                                <option value="son-in-law">Son-in-law</option>
+                                <option value="grand-son">Grand son</option>
+                                <option value="grand-daughter">Grand daughter</option>
+                                <option value="sibling">siblings</option>
+                                <option value="other">other</option>
                             </select>
                         </p>
 
@@ -847,7 +856,7 @@ if (isset($_SESSION['loggedIn'])) {
                     <div class="form-row">
                         <p>
                             <label for="">DOB:</label>
-                            <input type="date" name="" id="" class="h25">
+                            <input type="date" name="date7" id="" class="h25">
                         </p>
                     </div>
                     <hr>
@@ -857,59 +866,60 @@ if (isset($_SESSION['loggedIn'])) {
                     <div class="simple-row">
                         <div class="first-name">
                             <label for="">First Name:</label>
-                            <input type="text" name="fname" id="" placeholder="First Name" class="h30 w100">
+                            <input type="text" name="fname8" id="" placeholder="First Name" class="h30 w100">
                         </div>
                         <div class="middle-name">
                             <label for="">Middle Name:</label>
-                            <input type="text" name="mname" id="" placeholder="Middle Name" class="h30 w100">
+                            <input type="text" name="mname8" id="" placeholder="Middle Name" class="h30 w100">
                         </div>
                         <div class="last-name">
                             <label for="">Last Name:</label>
-                            <input type="text" name="lname" id="" placeholder="Last Name" class="h30 w100">
+                            <input type="text" name="lname8" id="" placeholder="Last Name" class="h30 w100">
                         </div>
                     </div>
                     <!--form row -->
                     <div class="form-row">
                         <p>
                             <label for="">Profession:</label>
-                            <select name="profession" class="h25">
-                                <option value="">teacher</option>
-                                <option value="">doctor</option>
-                                <option value="">agriculture</option>
-                                <option value="">engineer</option>
-                                <option value="">businessman</option>
-                                <option value="">unemployed</option>
+                            <select name="profession8" class="h25">
+                                <option value="doctor">Doctor</option>
+                                <option value="agriculture">Agriculture</option>
+                                <option value="engineer">Engineer</option>
+                                <option value="businessman">Businessman</option>
+                                <option value="military">Military</option>
+                                <option value="other">Others</option>
+                                <option value="unemp">Unemployed</option>
                             </select>
                         </p>
                         <p>
                             <label for="edu">Education:</label>
-                            <select name="education" id="" class="h25">
-                            <option value="elementary">Elementary</option>
-                            <option value="primary">Primary</option>
-                            <option value="secondary">Secondary</option>
-                            <option value="h_secodary">Higher Secondary</option>
-                            <option value="bachelor">Bachelor</option>
-                            <option value="masters">Masters</option>
-                            <option value="phd">PHD</option>
-                            <option value="none">None</option>
+                            <select name="education8" id="" class="h25">
+                                <option value="elementary">Elementary</option>
+                                <option value="primary">Primary</option>
+                                <option value="secondary">Secondary</option>
+                                <option value="h_secodary">Higher Secondary</option>
+                                <option value="bachelor">Bachelor</option>
+                                <option value="masters">Masters</option>
+                                <option value="phd">PHD</option>
+                                <option value="none">None</option>
                             </select>
                         </p>
                         <p>
                             <label for="">Relation:</label>
-                            <select name="relation" class="h25">
-                                <option value="">Head of family</option>
-                                <option value="">Mother</option>
-                                <option value="">Father</option>
-                                <option value="">Wife</option>
-                                <option value="">Husband</option>
-                                <option value="">Son</option>
-                                <option value="">Daughter</option>
-                                <option value="">Daughter-in-law</option>
-                                <option value="">Son-in-law</option>
-                                <option value="">Grand son</option>
-                                <option value="">Grand daughter</option>
-                                <option value="">siblings</option>
-                                <option value="">other</option>
+                            <select name="relation8" class="h25">
+                                <option value="head">Head of family</option>
+                                <option value="mother">Mother</option>
+                                <option value="father">Father</option>
+                                <option value="wife">Wife</option>
+                                <option value="husband">Husband</option>
+                                <option value="son">Son</option>
+                                <option value="daughter">Daughter</option>
+                                <option value="daughter">Daughter-in-law</option>
+                                <option value="son-in-law">Son-in-law</option>
+                                <option value="grand-son">Grand son</option>
+                                <option value="grand-daughter">Grand daughter</option>
+                                <option value="sibling">siblings</option>
+                                <option value="other">other</option>
                             </select>
                         </p>
 
@@ -917,7 +927,7 @@ if (isset($_SESSION['loggedIn'])) {
                     <div class="form-row">
                         <p>
                             <label for="">DOB:</label>
-                            <input type="date" name="" class="h25">
+                            <input type="date" name="date8" class="h25">
                         </p>
                     </div>
                     <hr>
@@ -927,59 +937,60 @@ if (isset($_SESSION['loggedIn'])) {
                     <div class="simple-row">
                         <div class="first-name">
                             <label for="">First Name:</label>
-                            <input type="text" name="fname" id="" placeholder="First Name" class="h30 w100">
+                            <input type="text" name="fname9" id="" placeholder="First Name" class="h30 w100">
                         </div>
                         <div class="middle-name">
                             <label for="">Middle Name:</label>
-                            <input type="text" name="mname" id="" placeholder="Middle Name" class="h30 w100">
+                            <input type="text" name="mname9" id="" placeholder="Middle Name" class="h30 w100">
                         </div>
                         <div class="last-name">
                             <label for="">Last Name:</label>
-                            <input type="text" name="lname" id="" placeholder="Last Name" class="h30 w100">
+                            <input type="text" name="lname9" id="" placeholder="Last Name" class="h30 w100">
                         </div>
                     </div>
                     <!--form row -->
                     <div class="form-row">
                         <p>
                             <label for="">Profession:</label>
-                            <select name="profession" class="h25">
-                                <option value="">teacher</option>
-                                <option value="">doctor</option>
-                                <option value="">agriculture</option>
-                                <option value="">engineer</option>
-                                <option value="">businessman</option>
-                                <option value="">unemployed</option>
+                            <select name="profession9" class="h25">
+                                <option value="doctor">Doctor</option>
+                                <option value="agriculture">Agriculture</option>
+                                <option value="engineer">Engineer</option>
+                                <option value="businessman">Businessman</option>
+                                <option value="military">Military</option>
+                                <option value="other">Others</option>
+                                <option value="unemp">Unemployed</option>
                             </select>
                         </p>
                         <p>
                             <label for="edu">Education:</label>
-                            <select name="education" id="" class="h25">
-                            <option value="elementary">Elementary</option>
-                            <option value="primary">Primary</option>
-                            <option value="secondary">Secondary</option>
-                            <option value="h_secodary">Higher Secondary</option>
-                            <option value="bachelor">Bachelor</option>
-                            <option value="masters">Masters</option>
-                            <option value="phd">PHD</option>
-                            <option value="none">None</option>
+                            <select name="education9" id="" class="h25">
+                                <option value="elementary">Elementary</option>
+                                <option value="primary">Primary</option>
+                                <option value="secondary">Secondary</option>
+                                <option value="h_secodary">Higher Secondary</option>
+                                <option value="bachelor">Bachelor</option>
+                                <option value="masters">Masters</option>
+                                <option value="phd">PHD</option>
+                                <option value="none">None</option>
                             </select>
                         </p>
                         <p>
                             <label for="">Relation:</label>
-                            <select name="relation" class="h25">
-                                <option value="">Head of family</option>
-                                <option value="">Mother</option>
-                                <option value="">Father</option>
-                                <option value="">Wife</option>
-                                <option value="">Husband</option>
-                                <option value="">Son</option>
-                                <option value="">Daughter</option>
-                                <option value="">Daughter-in-law</option>
-                                <option value="">Son-in-law</option>
-                                <option value="">Grand son</option>
-                                <option value="">Grand daughter</option>
-                                <option value="">siblings</option>
-                                <option value="">other</option>
+                            <select name="relation9" class="h25">
+                                <option value="head">Head of family</option>
+                                <option value="mother">Mother</option>
+                                <option value="father">Father</option>
+                                <option value="wife">Wife</option>
+                                <option value="husband">Husband</option>
+                                <option value="son">Son</option>
+                                <option value="daughter">Daughter</option>
+                                <option value="daughter">Daughter-in-law</option>
+                                <option value="son-in-law">Son-in-law</option>
+                                <option value="grand-son">Grand son</option>
+                                <option value="grand-daughter">Grand daughter</option>
+                                <option value="sibling">siblings</option>
+                                <option value="other">other</option>
                             </select>
                         </p>
 
@@ -987,7 +998,7 @@ if (isset($_SESSION['loggedIn'])) {
                     <div class="form-row">
                         <p>
                             <label for="">DOB:</label>
-                            <input type="date" name="" id="" class="h25">
+                            <input type="date" name="date9" id="" class="h25">
                         </p>
                     </div>
                     <hr>
@@ -997,59 +1008,60 @@ if (isset($_SESSION['loggedIn'])) {
                     <div class="simple-row">
                         <div class="first-name">
                             <label for="">First Name:</label>
-                            <input type="text" name="fname" id="" placeholder="First Name" class="h30 w100">
+                            <input type="text" name="fname10" id="" placeholder="First Name" class="h30 w100">
                         </div>
                         <div class="middle-name">
                             <label for="">Middle Name:</label>
-                            <input type="text" name="mname" id="" placeholder="Middle Name" class="h30 w100">
+                            <input type="text" name="mname10" id="" placeholder="Middle Name" class="h30 w100">
                         </div>
                         <div class="last-name">
                             <label for="">Last Name:</label>
-                            <input type="text" name="lname" id="" placeholder="Last Name" class="h30 w100">
+                            <input type="text" name="lname10" id="" placeholder="Last Name" class="h30 w100">
                         </div>
                     </div>
                     <!--form row -->
                     <div class="form-row">
                         <p>
                             <label for="">Profession:</label>
-                            <select name="profession" class="h25">
-                                <option value="">teacher</option>
-                                <option value="">doctor</option>
-                                <option value="">agriculture</option>
-                                <option value="">engineer</option>
-                                <option value="">businessman</option>
-                                <option value="">unemployed</option>
+                            <select name="profession10" class="h25">
+                                <option value="doctor">Doctor</option>
+                                <option value="agriculture">Agriculture</option>
+                                <option value="engineer">Engineer</option>
+                                <option value="businessman">Businessman</option>
+                                <option value="military">Military</option>
+                                <option value="other">Others</option>
+                                <option value="unemp">Unemployed</option>
                             </select>
                         </p>
                         <p>
                             <label for="edu">Education:</label>
-                            <select name="education" class="h25">
-                            <option value="elementary">Elementary</option>
-                            <option value="primary">Primary</option>
-                            <option value="secondary">Secondary</option>
-                            <option value="h_secodary">Higher Secondary</option>
-                            <option value="bachelor">Bachelor</option>
-                            <option value="masters">Masters</option>
-                            <option value="phd">PHD</option>
-                            <option value="none">None</option>
+                            <select name="education10" class="h25">
+                                <option value="elementary">Elementary</option>
+                                <option value="primary">Primary</option>
+                                <option value="secondary">Secondary</option>
+                                <option value="h_secodary">Higher Secondary</option>
+                                <option value="bachelor">Bachelor</option>
+                                <option value="masters">Masters</option>
+                                <option value="phd">PHD</option>
+                                <option value="none">None</option>
                             </select>
                         </p>
                         <p>
                             <label for="">Relation:</label>
-                            <select name="relation" class="h25">
-                                <option value="">Head of family</option>
-                                <option value="">Mother</option>
-                                <option value="">Father</option>
-                                <option value="">Wife</option>
-                                <option value="">Husband</option>
-                                <option value="">Son</option>
-                                <option value="">Daughter</option>
-                                <option value="">Daughter-in-law</option>
-                                <option value="">Son-in-law</option>
-                                <option value="">Grand son</option>
-                                <option value="">Grand daughter</option>
-                                <option value="">siblings</option>
-                                <option value="">other</option>
+                            <select name="relation10" class="h25">
+                                <option value="head">Head of family</option>
+                                <option value="mother">Mother</option>
+                                <option value="father">Father</option>
+                                <option value="wife">Wife</option>
+                                <option value="husband">Husband</option>
+                                <option value="son">Son</option>
+                                <option value="daughter">Daughter</option>
+                                <option value="daughter">Daughter-in-law</option>
+                                <option value="son-in-law">Son-in-law</option>
+                                <option value="grand-son">Grand son</option>
+                                <option value="grand-daughter">Grand daughter</option>
+                                <option value="sibling">siblings</option>
+                                <option value="other">other</option>
                             </select>
                         </p>
 
@@ -1057,7 +1069,7 @@ if (isset($_SESSION['loggedIn'])) {
                     <div class="form-row">
                         <p>
                             <label for="">DOB:</label>
-                            <input type="date" name="" id="" class="h25">
+                            <input type="date" name="10" id="" class="h25">
                         </p>
                     </div>
                     <hr>
@@ -1067,59 +1079,60 @@ if (isset($_SESSION['loggedIn'])) {
                     <div class="simple-row">
                         <div class="first-name">
                             <label for="">First Name:</label>
-                            <input type="text" name="fname" id="" placeholder="First Name" class="h30 w100">
+                            <input type="text" name="fname11" id="" placeholder="First Name" class="h30 w100">
                         </div>
                         <div class="middle-name">
                             <label for="">Middle Name:</label>
-                            <input type="text" name="mname" id="" placeholder="Middle Name" class="h30 w100">
+                            <input type="text" name="mname11" id="" placeholder="Middle Name" class="h30 w100">
                         </div>
                         <div class="last-name">
                             <label for="">Last Name:</label>
-                            <input type="text" name="lname" id="" placeholder="Last Name" class="h30 w100">
+                            <input type="text" name="lname11" id="" placeholder="Last Name" class="h30 w100">
                         </div>
                     </div>
                     <!--form row -->
                     <div class="form-row">
                         <p>
                             <label for="">Profession:</label>
-                            <select name="profession" class="h25">
-                                <option value="">teacher</option>
-                                <option value="">doctor</option>
-                                <option value="">agriculture</option>
-                                <option value="">engineer</option>
-                                <option value="">businessman</option>
-                                <option value="">unemployed</option>
+                            <select name="profession11" class="h25">
+                                <option value="doctor">Doctor</option>
+                                <option value="agriculture">Agriculture</option>
+                                <option value="engineer">Engineer</option>
+                                <option value="businessman">Businessman</option>
+                                <option value="military">Military</option>
+                                <option value="other">Others</option>
+                                <option value="unemp">Unemployed</option>
                             </select>
                         </p>
                         <p>
                             <label for="edu">Education:</label>
-                            <select name="education" class="h25">
-                            <option value="elementary">Elementary</option>
-                            <option value="primary">Primary</option>
-                            <option value="secondary">Secondary</option>
-                            <option value="h_secodary">Higher Secondary</option>
-                            <option value="bachelor">Bachelor</option>
-                            <option value="masters">Masters</option>
-                            <option value="phd">PHD</option>
-                            <option value="none">None</option>
+                            <select name="education11" class="h25">
+                                <option value="elementary">Elementary</option>
+                                <option value="primary">Primary</option>
+                                <option value="secondary">Secondary</option>
+                                <option value="h_secodary">Higher Secondary</option>
+                                <option value="bachelor">Bachelor</option>
+                                <option value="masters">Masters</option>
+                                <option value="phd">PHD</option>
+                                <option value="none">None</option>
                             </select>
                         </p>
                         <p>
                             <label for="">Relation:</label>
-                            <select name="relation" class="h25">
-                                <option value="">Head of family</option>
-                                <option value="">Mother</option>
-                                <option value="">Father</option>
-                                <option value="">Wife</option>
-                                <option value="">Husband</option>
-                                <option value="">Son</option>
-                                <option value="">Daughter</option>
-                                <option value="">Daughter-in-law</option>
-                                <option value="">Son-in-law</option>
-                                <option value="">Grand son</option>
-                                <option value="">Grand daughter</option>
-                                <option value="">siblings</option>
-                                <option value="">other</option>
+                            <select name="relation11" class="h25">
+                            <option value="head">Head of family</option>
+                            <option value="mother">Mother</option>
+                            <option value="father">Father</option>
+                            <option value="wife">Wife</option>
+                            <option value="husband">Husband</option>
+                            <option value="son">Son</option>
+                            <option value="daughter">Daughter</option>
+                            <option value="daughter">Daughter-in-law</option>
+                            <option value="son-in-law">Son-in-law</option>
+                            <option value="grand-son">Grand son</option>
+                            <option value="grand-daughter">Grand daughter</option>
+                            <option value="sibling">siblings</option>
+                            <option value="other">other</option>
                             </select>
                         </p>
 
@@ -1127,7 +1140,7 @@ if (isset($_SESSION['loggedIn'])) {
                     <div class="form-row">
                         <p>
                             <label for="">DOB:</label>
-                            <input type="date" name="" id="" class="h25">
+                            <input type="date" name="date11" id="" class="h25">
                         </p>
                     </div>
                     <hr>
@@ -1137,59 +1150,60 @@ if (isset($_SESSION['loggedIn'])) {
                     <div class="simple-row">
                         <div class="first-name">
                             <label for="">First Name:</label>
-                            <input type="text" name="fname" id="" placeholder="First Name" class="h30 w100">
+                            <input type="text" name="fname12" id="" placeholder="First Name" class="h30 w100">
                         </div>
                         <div class="middle-name">
                             <label for="">Middle Name:</label>
-                            <input type="text" name="mname" id="" placeholder="Middle Name" class="h30 w100">
+                            <input type="text" name="mname12" id="" placeholder="Middle Name" class="h30 w100">
                         </div>
                         <div class="last-name">
                             <label for="">Last Name:</label>
-                            <input type="text" name="lname" id="" placeholder="Last Name" class="h30 w100">
+                            <input type="text" name="lname12" id="" placeholder="Last Name" class="h30 w100">
                         </div>
                     </div>
                     <!--form row -->
                     <div class="form-row">
                         <p>
                             <label for="">Profession:</label>
-                            <select name="profession" class="h25">
-                                <option value="">teacher</option>
-                                <option value="">doctor</option>
-                                <option value="">agriculture</option>
-                                <option value="">engineer</option>
-                                <option value="">businessman</option>
-                                <option value="">unemployed</option>
+                            <select name="profession12" class="h25">
+                            <option value="doctor">Doctor</option>
+                                <option value="agriculture">Agriculture</option>
+                                <option value="engineer">Engineer</option>
+                                <option value="businessman">Businessman</option>
+                                <option value="military">Military</option>
+                                <option value="other">Others</option>
+                                <option value="unemp">Unemployed</option>
                             </select>
                         </p>
                         <p>
                             <label for="edu">Education:</label>
-                            <select name="education" id="" class="h25">
-                            <option value="elementary">Elementary</option>
-                            <option value="primary">Primary</option>
-                            <option value="secondary">Secondary</option>
-                            <option value="h_secodary">Higher Secondary</option>
-                            <option value="bachelor">Bachelor</option>
-                            <option value="masters">Masters</option>
-                            <option value="phd">PHD</option>
-                            <option value="none">None</option>
+                            <select name="education12" id="" class="h25">
+                                <option value="elementary">Elementary</option>
+                                <option value="primary">Primary</option>
+                                <option value="secondary">Secondary</option>
+                                <option value="h_secodary">Higher Secondary</option>
+                                <option value="bachelor">Bachelor</option>
+                                <option value="masters">Masters</option>
+                                <option value="phd">PHD</option>
+                                <option value="none">None</option>
                             </select>
                         </p>
                         <p>
                             <label for="">Relation:</label>
-                            <select name="relation" class="h25" class="h25">
-                                <option value="">Head of family</option>
-                                <option value="">Mother</option>
-                                <option value="">Father</option>
-                                <option value="">Wife</option>
-                                <option value="">Husband</option>
-                                <option value="">Son</option>
-                                <option value="">Daughter</option>
-                                <option value="">Daughter-in-law</option>
-                                <option value="">Son-in-law</option>
-                                <option value="">Grand son</option>
-                                <option value="">Grand daughter</option>
-                                <option value="">siblings</option>
-                                <option value="">other</option>
+                            <select name="relation12" class="h25" class="h25">
+                            <option value="head">Head of family</option>
+                            <option value="mother">Mother</option>
+                            <option value="father">Father</option>
+                            <option value="wife">Wife</option>
+                            <option value="husband">Husband</option>
+                            <option value="son">Son</option>
+                            <option value="daughter">Daughter</option>
+                            <option value="daughter">Daughter-in-law</option>
+                            <option value="son-in-law">Son-in-law</option>
+                            <option value="grand-son">Grand son</option>
+                            <option value="grand-daughter">Grand daughter</option>
+                            <option value="sibling">siblings</option>
+                            <option value="other">other</option>
                             </select>
                         </p>
 
@@ -1197,7 +1211,7 @@ if (isset($_SESSION['loggedIn'])) {
                     <div class="form-row">
                         <p>
                             <label for="">DOB:</label>
-                            <input type="date" name="" id="" class="h25">
+                            <input type="date" name="date12" id="" class="h25">
                         </p>
                     </div>
                     <hr>
@@ -1212,7 +1226,7 @@ if (isset($_SESSION['loggedIn'])) {
                     </p>
                     <p>
                         <label for="production">Agricultural income:</label>
-                        <input type="text" placeholder="In cash" class="h25">
+                        <input type="text" placeholder="In cash" class="h25" name="agname">
                     </p>
                 </div>
                 <div class="form-row">
@@ -1298,5 +1312,6 @@ if (isset($_SESSION['loggedIn'])) {
     <!--form-div-->
     <script src="js/script2.js"></script>
 </body>
-
 </html>
+
+<?php

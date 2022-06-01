@@ -18,45 +18,18 @@ if (isset($_SESSION['adminLoggedIn'])) {
 </head>
 
 <body>
-    <div class="add-panel">
-        <div class="add-panel-top"><img src="photo/close-panel.png" alt="" class="add-panel-close" height="20px"></div>
-        <form action="admin.php" method="post" autocomplete="off">
-            <div style="text-align: center; margin-bottom: 30px;">
-                <p>Add new counter </p>
-                
-            </div>
-            <input type="text" name="counter_name" id="" placeholder="Full Name" class="admin-form-control"><br>
-            <input type="text" name="contact" id="" placeholder="Mobile number or Email" class="admin-form-control" autocomplete="off"><br>
-            <input type="password" name="password" id="" placeholder="New Password" class="admin-form-control" autocomplete="off"><br>
-            <div class = "admin-form-control">
-            <label for="gender">Gender:</label>
-            <label for="male" style="border: 1px solid grey; margin-left: 3px;">Male
-                <input type="radio" name="gender" id="" value="male">
-            </label>
-            <label for="female" style="border: 1px solid grey; margin-left: 3px;">Female
-                <input type="radio" name="gender" id="" value="female">
-            </label>
-            </div>
-            <br>
-            <input type="submit" value="Register" name="register" class = "admin-form-control">
-        </form>
-    </div>
     <header class="admin-top-bar">
-        <nav class="admin-menu">
-            <ul>
-                <li><a href="" id="counters-list">Counters</a></li>
-                <li><a href="" id="add-counter">Add</a></li>
-
-            </ul>
-        </nav>
-        <div class="mobile-menu">
-            <img src="photo/menu.png" alt="menu icon" height="25px">
+        <div class="logo-in-admin">
+            <h2>Census<span style="color: red;">Board</span></h2>
         </div>
-        <div class="admin-logout-section">
-            <a href="logout.php"> <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
-           
-        </div>
+           <a href="logout.php"> <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
     </header>
+    <main class="main-container">
+        <div class="counters">
+            <h3 id="admin-appointed-list-heading">Appointed Counters</h3>
+        </div>
+        <div class="add-counters"></div>
+    </main>
     <script src="js/script.js"></script>
 </body>
 
