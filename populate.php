@@ -7,8 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>population census nepal -- verify yourself</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body
+        {
+            background-color: #f0f0f1;
+        }
+    </style>
 </head>
-
 <body>
     <div class="container">
         <div class="logo">
@@ -17,15 +22,10 @@
             </a>
         </div>
         <div class="centerdiv">
+        
+
             <form name="login-panel" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="login-form" autocomplete="false">
-                <input type="text" name="username" class="inputbox" placeholder="Username">
-                <br>
-                <input type="Password" name="password" class="inputbox" placeholder="Password">
-                <br>
-                <label id="loginadmin" for="admin">Are you an admin?</label>
-                <input type="checkbox" name="admin" id="" value="yes"><br>
-                <input type="submit" value="Log In" class="submit-btn-1" name="submit">
-                <?php
+            <?php
                 error_reporting(0);
                 session_start();
                 if (time() - $_SESSION['start'] > 4) {
@@ -39,7 +39,15 @@
                         }
                         ?>
                     </div> <?php } ?>
-
+                <input type="text" name="username" class="inputbox" placeholder="Mobile number or email">
+                <br>
+                <input type="Password" name="password" class="inputbox" placeholder="Password">
+                <br>
+                
+                <input type="checkbox" name="admin" id="" value="yes">
+                <labelfor="admin">Are you an admin?</label><br>
+                <input type="submit" value="Log In" class="submit-btn-1" name="submit">
+               
             </form> <br>
 
         </div>
@@ -68,7 +76,7 @@ if (isset($_POST['submit'])) {
             header("location:populate.php");
         }
     } else {
-        $sql = "select * from counter where pwd = '" . $password . "' and username = '" . $username . "'";
+        $sql = "select * from counters where pwd = '" . $password . "' and contact = '" . $username . "'";
         $result = mysqli_query($conn, $sql);
         $data = mysqli_fetch_assoc($result);
         if (mysqli_num_rows($result) > 0) {
@@ -77,6 +85,8 @@ if (isset($_POST['submit'])) {
             $_SESSION['username'] = $_POST['username'];
             $_SESSION['password'] = $_POST['password'];
             $_SESSION['full_name'] = $data["Full_Name"];
+            $_SESSION['id'] = $data["ID"];
+            $_SESSION['acode'] = $data['a_code'];
             header('location: login.php');
             exit();
         } else {

@@ -1,0 +1,124 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.results-topbar
+{
+  line-height: 35px;
+  background-color: bisque;
+  position: fixed;
+  top: 0;
+  height: 35px;
+  width: 100%;
+}
+.category 
+{
+  background-color: whitesmoke;
+  position: absolute;
+  z-index: 999999;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+ 
+}
+.category li
+{
+  width: 100px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 25px;
+  margin-left: 10px;
+}
+.view-section
+{
+  height: 500px;
+  width: 100%;
+  background-color: lightyellow;
+}
+.show-bar
+{
+  float: right;
+  width: 40%;
+  height: 350px;
+  background-color: #09265F;
+  margin: auto;
+  margin-top: 40px;
+  margin-right: 40px;
+
+}
+canvas
+{
+  margin: auto;
+
+}
+.tables
+{
+  margin-top: 120px;
+  float: left;
+  width: 45%;
+  margin-left: 50px;
+}
+.viewtable {
+    font-family: sans-serif;
+    border-collapse: collapse;
+  }
+  
+  .viewtable td, .viewtable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .viewtable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #09265F;
+    color: white;
+  }
+
+  /* div.graph{
+      position: absolute;
+      align-content: center;
+
+  } */
+  #mycanvas{
+      position: absolute;
+      align-items: center;
+    
+      
+  }
+  .active
+  {
+    background-color: #09265F !important;
+    color: aliceblue;
+    text-align: center;
+  }
+  .profession,.caste,.religion, .literacy, .language
+  {
+      display: none;
+  }
+
+  @media screen and (max-width: 970px)
+  {
+    .tables
+    {
+      margin-left: 0px;
+      width: 90%;
+    }
+    .viewtable
+    {
+      margin: auto;
+    }
+    .show-bar
+    {
+      width: 100%;
+      margin-right: 0px;
+    }
+    .view-section
+    {
+      height: 900px;
+      
+    }
+  }

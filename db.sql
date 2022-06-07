@@ -4,7 +4,8 @@ create table family
     head_fname varchar(15) NOT NULL,
     head_mname varchar(15) NOT NULL,
     head_lname varchar(15) NOT NULL,
-    Member_nbr int(12) NOT NULL,
+    Member_nbr int(3) NOT NULL,
+    abroad int(2) NOT NULL,
     religion char(15) NOT NULL,
     caste char(15) NOT NULL,
     language_spoken char(15) NOT NULL,
@@ -13,6 +14,7 @@ create table family
     province char(30) NOT NULL,
     district char(30) NOT NULL,
     local_level char(40) NOT NULL,
+    village char(40) NOT NULL,
     PRIMARY KEY(fid)
 );
 create table member(
@@ -49,19 +51,12 @@ create table member(
      land_use varchar(20) NOT NULL,
      land_ownership varchar(10)  NOT NULL,
      ag_income int(10)  NOT NULL,
-     crop_type varchar(20) NOT NULL,
      buffalo int(2)  NOT NULL,
-     ship int(2)  NOT NULL,
+     sheep int(2)  NOT NULL,
      goat int(2)  NOT NULL,
      pig int(2)  NOT NULL,
      yak int(2)  NOT NULL,
      cow int(2)  NOT NULL,
-     FOREIGN KEY(fid) references family(fid)
- );
-
- create table crops
- (
-     fid varchar(12),
      maize boolean,
      millet boolean,
      mustard boolean,

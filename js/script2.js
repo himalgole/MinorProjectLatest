@@ -54,14 +54,28 @@ function func_sheep()
      document.querySelector(".sheep").style.display = "block";
      document.getElementById("none").checked = false;
 }
+function func_yak()
+{
+     document.querySelector(".yak").style.display = "block";
+     document.getElementById("none").checked = false;
+}
+function func_pig()
+{
+     document.querySelector(".pig").style.display = "block";
+     document.getElementById("none").checked = false;
+}
 function func_none()
 {
     document.getElementById("buffalo").checked = false;
     document.getElementById("cow").checked = false;
     document.getElementById("goat").checked = false;
     document.getElementById("sheep").checked = false;
+    document.getElementById("pig").checked = false;
+    document.getElementById("yak").checked = false;
     document.querySelector(".buffalo").style.display = "none";
     document.querySelector(".goat").style.display = "none";
     document.querySelector(".cow").style.display = "none";
     document.querySelector(".sheep").style.display = "none";
+    document.querySelector(".yak").style.display = "none";
+    document.querySelector(".pig").style.display = "none";
 }

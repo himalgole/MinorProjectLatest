@@ -198,3 +198,4 @@ document.querySelector(".close-detail").addEventListener("click",function(){
       var panel = document.querySelector(".search-detail");
       panel.style.display = "none";
 });
+
